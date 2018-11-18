@@ -1,0 +1,32 @@
+[
+    {
+        "name": {
+            "firstName": "abc",
+            "lastName": "xyz"
+        },
+        "age": 10,
+        "username": "abcxyz",
+        "password": null,
+        "loggedIn": true,
+        "address":[
+            {
+                "type":"home",
+                "description":"bangalore"
+            },
+            {
+                "type":"office",
+                "description":"bangalore east"
+            }
+        ]
+    },
+    {
+        "name": {
+            "firstName": "abc",
+            "lastName": "xyz"
+        },
+        "age": 10,
+        "username": "abcxyz",
+        "password": "abc",
+        "loggedIn": true
+    }
+]
