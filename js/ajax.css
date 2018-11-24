@@ -1,0 +1,36 @@
+#demo{
+    background-color: red;
+}
+
+.posts{
+    width: 100%;
+    background-color: #ccc;
+}
+
+.posts .post{
+    display: inline-block;
+    margin: 1% 1%;
+    width: 25%;
+    height: 30%;
+    background-color: #7676ec;
+    border: 1px solid #ccc;
+    position: relative;
+    border-radius: 3px;
+}
+
+.posts .post .id{
+    font-size: 17px;
+    text-align: center;
+    position: absolute;
+    background: #fc6666;
+    border: 1px solid #ccc;
+    margin: 0px;
+    padding: 0px;
+}
+
+.posts .post .title{
+    font-size: 10px;
+    position: absolute;
+    margin: 10px 15px;
+}
+
