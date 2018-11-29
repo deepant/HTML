@@ -1,0 +1,153 @@
+<html>
+
+<head>
+  <style>
+    *,
+    *:before,
+    *:after {
+      box-sizing: border-box;
+    }
+
+    body {
+      /* margin: 40px; */
+      font-family: 'Open Sans', 'sans-serif';
+      background-color: #fff;
+      color: #444;
+    }
+
+    .wrapper {
+      max-width: 940px;
+      margin: 0 20px;
+      display: grid;
+      grid-gap: 5px;
+    }
+
+    @media screen and (min-width: 500px) {
+
+
+
+      .wrapper {
+        margin: 0 auto;
+      }
+
+      .header,
+      .footer {
+        clear: both;
+        color: #fff;
+      }
+
+      .header {
+        background-color: #3f5abe;
+      }
+
+      .content {
+        width: 100%;
+      }
+
+      .footer {
+        background-color: #444;
+      }
+
+    }
+
+    .wrapper>* {
+      border-radius: 5px;
+      padding: 20px;
+      font-size: 150%;
+      /* needed for the floated layout*/
+      margin-bottom: 10px;
+    }
+
+    /* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
+    @supports (display: grid) {
+      .wrapper>* {
+        width: auto;
+        margin: 0;
+      }
+    }
+
+form{
+  width: 30%;
+    border: 1px solid #555;
+    padding: 5px;
+    border-radius: 5px;
+    display: block;
+    margin-left: 35%;
+
+}
+
+form:hover{
+  
+}
+    form h1{
+      margin: 10px;
+    font-size: 25px;
+    text-decoration: underline;
+    text-align: center;
+    }
+
+    form div{
+    display: block;
+    }
+
+    form div label{
+      padding: 10px;
+    color: #555;
+    font-size: 20px;
+    width: 100%;
+    display: block;
+    }
+
+form div input{
+  display: block;
+    width: 100%;
+    padding: 5px;
+    margin-left: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+form div button{
+  background-color: #3f5abe;
+    color: #fff;
+    padding: 5px;
+    font-size: 15px;
+    width: 100px;
+    margin: 10px;
+}
+     
+  </style>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header class="header">My header</header>
+    <article class="content">
+
+      <form>
+        <h1>Login Form</h1>
+        <div>
+          <label>
+            User Name :
+          </label>
+          <input type="text" name="userName" />
+        </div>
+        <div>
+          <label>
+            Password :
+          </label>
+          <input type="text" name="password" />
+        </div>
+        <div>
+          <button>Login</button>
+        </div>
+
+      </form>
+    </article>
+    <footer class="footer">My footer</footer>
+  </div>
+
+</body>
+
+</html>
